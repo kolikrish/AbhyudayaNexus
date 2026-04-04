@@ -69,10 +69,10 @@ export default function HeroSection() {
           ref={stickyMaskRef}
           className="sticky top-0 h-screen w-full flex items-center justify-center overflow-hidden z-10"
           style={{
-            maskImage: 'url(/assets/logo2.png)',
-            WebkitMaskImage: 'url(/assets/logo2.png)',
-            maskPosition: '52.35% center',
-            WebkitMaskPosition: '52.35% center',
+            maskImage: 'url(/assets/logo-cutted.png)',
+            WebkitMaskImage: 'url(/assets/logo-cutted.png)',
+            maskPosition: '42.35% center',
+            WebkitMaskPosition: '50.35% center',
             maskRepeat: 'no-repeat',
             WebkitMaskRepeat: 'no-repeat',
             maskSize: '80%',

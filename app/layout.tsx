@@ -17,7 +17,7 @@ const lexend = Lexend({
 });
 
 export const metadata: Metadata = {
-  title: "BIHAAN'25",
+  title: "AbhyudayaNexus",
   description: "Fresher's Event of RCCIIT",
   icons: {
     icon: "/assets/bihan_favicon2.svg",

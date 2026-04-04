@@ -70,66 +70,67 @@ const Gallery = () => {
                         <br className="hidden md:block" />
                           took the Stage
                     </h1>
-                    <p className="text-base sm:text-lg md:text-xl max-w-3xl">
-                        Spotlighting The Performances Of <span className="gradient-fresher">Our Freshers</span> Who Lit Up The Stage With
-                        <br className="hidden md:block" />
+                    <p className="text-base sm:text-lg md:text-2xl max-w-3xl leading-relaxed md:leading-10">
+                        Spotlighting The Performances Of <span className="gradient-fresher">Our Freshers</span> Who Lit Up The Stage With{' '}
+                        {/* <br className="hidden md:block" /> */}
                         Talent, Energy, and <span className="gradient-fresher">Unmatched Vibes.</span>
                     </p>
                 </div>
 
                 {/* Gallery Layout */}
-                <div className="relative w-full flex justify-center mb-8 overflow-hidden">
-                    <div className="flex gap-6 items-start relative">
+            <div className="relative w-full flex justify-center mb-8 overflow-hidden">
+                <div className="flex gap-6 items-start relative">
 
-            {/* Column 1 - Half outside left, positioned down - opacity 0.5 */}
-            <div className="flex flex-col gap-6" style={{ marginLeft: '-100px', marginTop: '150px' }}>
-              <CardComponent card={{ id: 0, highlighted: false, image: images[0], columnOpacity: 0.7 }} hoveredIndex={hoveredIndex} setHoveredIndex={setHoveredIndex} />
-              <CardComponent card={{ id: 1, highlighted: false, image: images[1], columnOpacity: 0.7 }} hoveredIndex={hoveredIndex} setHoveredIndex={setHoveredIndex} />
-            </div>
+                    {/* Column 1 - Half outside left, positioned down - opacity 0.5 */}
+                    <div className="flex flex-col gap-6" style={{ marginLeft: '-100px', marginTop: '150px' }}>
+                        <CardComponent card={{ id: 0, highlighted: false, image: images[0], columnOpacity: 0.7 }} hoveredIndex={hoveredIndex} setHoveredIndex={setHoveredIndex} />
+                        <CardComponent card={{ id: 1, highlighted: false, image: images[1], columnOpacity: 0.7 }} hoveredIndex={hoveredIndex} setHoveredIndex={setHoveredIndex} />
+                    </div>
 
-            {/* Column 2 - Higher than last column - opacity 0.6 */}
-            <div className="flex flex-col gap-6" style={{ marginTop: '50px' }}>
-              <CardComponent card={{ id: 2, highlighted: false, image: images[2], columnOpacity: 0.8 }} hoveredIndex={hoveredIndex} setHoveredIndex={setHoveredIndex} />
-              <CardComponent card={{ id: 3, highlighted: false, image: images[3], columnOpacity: 0.8 }} hoveredIndex={hoveredIndex} setHoveredIndex={setHoveredIndex} />
-            </div>
+                    {/* Column 2 - Higher than last column - opacity 0.6 */}
+                    <div className="flex flex-col gap-6" style={{ marginTop: '50px' }}>
+                        <CardComponent card={{ id: 2, highlighted: false, image: images[2], columnOpacity: 0.8 }} hoveredIndex={hoveredIndex} setHoveredIndex={setHoveredIndex} />
+                        <CardComponent card={{ id: 3, highlighted: false, image: images[3], columnOpacity: 0.8 }} hoveredIndex={hoveredIndex} setHoveredIndex={setHoveredIndex} />
+                    </div>
 
-            {/* Column 3 - Single image, middle level - opacity 0.8 */}
-            <div className="flex flex-col gap-6" style={{ marginTop: '100px' }}>
-              <CardComponent card={{ id: 4, highlighted: false, image: images[4], columnOpacity: 0.9 }} hoveredIndex={hoveredIndex} setHoveredIndex={setHoveredIndex} />
-            </div>
+                    {/* Column 3 - Single image, middle level - opacity 0.8 */}
+                    <div className="flex flex-col gap-6" style={{ marginTop: '100px' }}>
+                        <CardComponent card={{ id: 4, highlighted: false, image: images[4], columnOpacity: 0.9 }} hoveredIndex={hoveredIndex} setHoveredIndex={setHoveredIndex} />
+                    </div>
 
-            {/* Column 4 - Single image, highlighted, higher than column 3 - opacity 1 */}
-            <div className="flex flex-col gap-6" style={{ marginTop: '25px' }}>
-              <CardComponent card={{ id: 5, highlighted: true, image: images[5], columnOpacity: 1 }} hoveredIndex={hoveredIndex} setHoveredIndex={setHoveredIndex} />
-            </div>
+                    {/* Column 4 - Single image, highlighted, higher than column 3 - opacity 1 */}
+                    <div className="flex flex-col gap-6" style={{ marginTop: '25px' }}>
+                        <CardComponent card={{ id: 5, highlighted: true, image: images[5], columnOpacity: 1 }} hoveredIndex={hoveredIndex} setHoveredIndex={setHoveredIndex} />
+                    </div>
 
-            {/* Column 5 - Single image, highlighted, same level as column 4 - opacity 1 */}
-            <div className="flex flex-col gap-6" style={{ marginTop: '25px' }}>
-              <CardComponent card={{ id: 6, highlighted: true, image: images[6], columnOpacity: 1 }} hoveredIndex={hoveredIndex} setHoveredIndex={setHoveredIndex} />
-            </div>
+                    {/* Column 5 - Single image, highlighted, same level as column 4 - opacity 1 */}
+                    <div className="flex flex-col gap-6" style={{ marginTop: '25px' }}>
+                        <CardComponent card={{ id: 6, highlighted: true, image: images[6], columnOpacity: 1 }} hoveredIndex={hoveredIndex} setHoveredIndex={setHoveredIndex} />
+                    </div>
 
-            {/* Column 6 - Single image, same as column 3 - opacity 0.8 */}
-            <div className="flex flex-col gap-6" style={{ marginTop: '100px' }}>
-              <CardComponent card={{ id: 7, highlighted: false, image: images[7], columnOpacity: 0.9 }} hoveredIndex={hoveredIndex} setHoveredIndex={setHoveredIndex} />
-            </div>
+                    {/* Column 6 - Single image, same as column 3 - opacity 0.8 */}
+                    <div className="flex flex-col gap-6" style={{ marginTop: '100px' }}>
+                        <CardComponent card={{ id: 7, highlighted: false, image: images[7], columnOpacity: 0.9 }} hoveredIndex={hoveredIndex} setHoveredIndex={setHoveredIndex} />
+                    </div>
 
-            {/* Column 7 - Same as column 2 - opacity 0.6 */}
-            <div className="flex flex-col gap-6" style={{ marginTop: '50px' }}>
-              <CardComponent card={{ id: 8, highlighted: false, image: images[8], columnOpacity: 0.8 }} hoveredIndex={hoveredIndex} setHoveredIndex={setHoveredIndex} />
-              <CardComponent card={{ id: 9, highlighted: false, image: images[9], columnOpacity: 0.8 }} hoveredIndex={hoveredIndex} setHoveredIndex={setHoveredIndex} />
-            </div>
+                    {/* Column 7 - Same as column 2 - opacity 0.6 */}
+                    <div className="flex flex-col gap-6" style={{ marginTop: '50px' }}>
+                        <CardComponent card={{ id: 8, highlighted: false, image: images[8], columnOpacity: 0.8 }} hoveredIndex={hoveredIndex} setHoveredIndex={setHoveredIndex} />
+                        <CardComponent card={{ id: 9, highlighted: false, image: images[9], columnOpacity: 0.8 }} hoveredIndex={hoveredIndex} setHoveredIndex={setHoveredIndex} />
+                    </div>
 
-            {/* Column 8 - Half outside right, same as column 1 - opacity 0.5 */}
-            <div className="flex flex-col gap-6" style={{ marginRight: '-100px', marginTop: '150px' }}>
-              <CardComponent card={{ id: 10, highlighted: false, image: images[10], columnOpacity: 0.7 }} hoveredIndex={hoveredIndex} setHoveredIndex={setHoveredIndex} />
-              <CardComponent card={{ id: 11, highlighted: false, image: images[11], columnOpacity: 0.7 }} hoveredIndex={hoveredIndex} setHoveredIndex={setHoveredIndex} />
-            </div>
+                    {/* Column 8 - Half outside right, same as column 1 - opacity 0.5 */}
+                    <div className="flex flex-col gap-6" style={{ marginRight: '-100px', marginTop: '150px' }}>
+                        <CardComponent card={{ id: 10, highlighted: false, image: images[10], columnOpacity: 0.7 }} hoveredIndex={hoveredIndex} setHoveredIndex={setHoveredIndex} />
+                        <CardComponent card={{ id: 11, highlighted: false, image: images[11], columnOpacity: 0.7 }} hoveredIndex={hoveredIndex} setHoveredIndex={setHoveredIndex} />
+                    </div>
             
-            {/* Call to Action - Positioned at bottom of columns 2,7 */}
-            <div className="absolute text-center mb-[5vh]" style={{ bottom: '60px', left: '50%', transform: 'translateX(-50%)' }}>
-                <p className="text-lg mb-4">Fresher?</p>
-                <JoinBihanButton />
-            </div>
+                    {/* Call to Action - Positioned at bottom of columns 2,7 */}
+                    <div className="absolute text-center mb-[5vh]" style={{ bottom: '60px', left: '50%', transform: 'translateX(-50%)' }}>
+                        <p className="text-lg mb-4">Fresher?</p>
+                        <JoinBihanButton />
+                    </div>
+                    
                     </div>
                 </div>
             </div>

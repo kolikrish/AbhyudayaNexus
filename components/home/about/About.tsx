@@ -39,7 +39,7 @@ const About = () => {
 
         {/* Section 2: Celebration - Left text, Right image */}
         <div className="min-h-[40vh] md:min-h-[60vh] grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-start">
-          <div className="order-1 flex items-start min-h-[150px] md:min-h-[700px] z-10 relative pt-4 md:pt-8">
+          <div className="order-1 flex items-start min-h-37.5 md:min-h-175 z-10 relative pt-4 md:pt-8">
             <TextAnimation
               as="p"
               letterAnime={true}
@@ -61,7 +61,7 @@ const About = () => {
 
 
             <p className="mt-3 md:mt-4 text-white text-xs sm:text-sm md:text-base font-light uppercase tracking-[0.15em] md:tracking-[0.2em]">
-              WHERE THE VIBES HIT DIFFERENT
+              PRACTICAL SKILLS FOR REAL DEVELOPERS
             </p>
           </div>
         </div>
@@ -77,10 +77,10 @@ const About = () => {
               />
             </div>
             <p className="mt-3 md:mt-4 text-white text-xs sm:text-sm md:text-base font-light uppercase tracking-[0.15em] md:tracking-[0.2em]">
-              FIRST DAY FEELS, FOREVER MEMORIES
+              NO BUGS. JUST BREAKTHROUGHS.
             </p>
           </div>
-          <div className="order-1 md:order-2 flex items-start min-h-[150px] md:min-h-[700px] z-10 relative pt-4 md:pt-8">
+          <div className="order-1 md:order-2 flex items-start min-h-37.5 md:min-h-175 z-10 relative pt-4 md:pt-8">
             <TextAnimation
               as="p"
               text="This hackathon brings coders together to build, innovate, and create solutions that matter. A space of code, chaos, creativity, and unforgettable breakthroughs."
@@ -98,67 +98,52 @@ const About = () => {
             className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black text-center"
             style={{ fontFamily: 'var(--font-lexend), sans-serif' }}
           >
-            New <span className='gradient-smoke-statement'>faces</span>
+            Fresh <span className='gradient-smoke-statement'>Faces</span>
           </h2>
 
           <h2
             className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black text-center"
             style={{ fontFamily: 'var(--font-lexend), sans-serif' }}
           >
-            New <span className='gradient-smoke-statement'>hype.</span>
+            Bold <span className='gradient-smoke-statement'>Ideas.</span>
           </h2>
 
           <h2
             className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black text-center leading-[1.2] pb-4"
             style={{ fontFamily: 'var(--font-lexend), sans-serif' }}
           >
-            New <span className='gradient-smoke-statement'>beginnings.</span>
+            Real <span className='gradient-smoke-statement'>Impact.</span>
           </h2>
         </div>
 
         {/* Section 5: Final statements */}
-        <div className="min-h-[30vh] md:min-h-[50vh] flex flex-col items-center justify-center space-y-5 md:space-y-8 py-8 text-[#FFF3D2]">
+        <div className="min-h-[30vh] md:min-h-[50vh] flex flex-col items-center justify-center space-y-5 md:space-y-8 py-8">
           <TextAnimation
             as="h2"
-            text="Bihaan'25 is here."
+            text="This Is Where You Rise —"
             direction="up"
             lineAnime={true}
             viewport={{ amount: 0.5, once: false }}
-            classname="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-medium text-[#FFF3D2] text-center normal-case!"
-            customStyle={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
+            classname="text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold text-center normal-case! text-white"
+            customStyle={{ fontFamily: 'Helvetica, Arial, sans-serif', color: '#ffffff' }}
           />
 
-          <TextAnimation
-            as="h2"
-            text="This is your beginning."
-            direction="up"
-            lineAnime={true}
-            viewport={{ amount: 0.5, once: false }}
-            classname="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-medium text-[#FFF3D2] text-center normal-case!"
-            customStyle={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
-          />
-        </div>
-
-        {/* Section 6: Image 3 - Left image */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-start pt-1">
-          <div className="order-1">
-            <div className="w-full aspect-3/4 mx-auto">
-              <RevealImage
-                src="https://i.postimg.cc/C1ztxvKx/img26.jpg"
-                alt="Celebration"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <p className="mt-3 md:mt-4 text-white text-xs sm:text-sm md:text-base font-light uppercase tracking-[0.15em] md:tracking-[0.2em]">
-              FRESHERS BRINGING THE ENERGY
-            </p>
+          <div className="border-b-4 border-yellow-100 rounded-full inline-block px-2">
+            <TextAnimation
+              as="h2"
+              text="Abhyudaya Coding Club."
+              direction="up"
+              lineAnime={true}
+              viewport={{ amount: 0.5, once: false }}
+              classname="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-center normal-case!"
+              customStyle={{ fontFamily: 'Helvetica, Arial, sans-serif', color: '#FFF3D2' }}
+            />
           </div>
-          <div className="order-2"></div>
         </div>
 
         {/* Section 7: Image 4 - Center image */}
         <div className="flex flex-col justify-center items-center w-full py-6 md:py-10">
-          <div className="w-full max-w-[1000px] h-[40vh] sm:h-[50vh] md:h-[600px]">
+          <div className="w-full max-w-250 h-[40vh] sm:h-[50vh] md:h-150">
            
               <RevealImage
                 src="https://i.postimg.cc/287Scg2B/img18.jpg"
@@ -172,45 +157,11 @@ const About = () => {
           </p>
         </div>
 
-        {/* Section 8: Image 5 - Left image */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-start">
-          <div className="order-1">
-            <div className="w-full aspect-3/4 mx-auto">
-              <RevealImage
-                src="https://i.postimg.cc/HWfM1GwK/img21.jpg"
-                alt="Celebration"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <p className="mt-3 md:mt-4 text-white text-xs sm:text-sm md:text-base font-light uppercase tracking-[0.15em] md:tracking-[0.2em]">
-              SQUAD GOALS UNLOCKED
-            </p>
-          </div>
-          <div className="order-2"></div>
-        </div>
-
-        {/* Section 9: Image 6 - Right image */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-start pb-10 md:pb-16">
-          <div className="order-1"></div>
-          <div className="order-2">
-           <div className="w-full aspect-3/4 mx-auto">
-              <RevealImage
-                src="https://i.postimg.cc/3wSyLzrP/img7.jpg"
-                alt="Celebration"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <p className="mt-3 md:mt-4 text-white text-xs sm:text-sm md:text-base font-light uppercase tracking-[0.15em] md:tracking-[0.2em]">
-              NEW CHAPTER, EPIC VIBES
-            </p>
-          </div>
-        </div>
-
       </div>
 
       {/* Marquee Section - Full Width */}
       <div 
-        className={`w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] min-h-[200px] md:min-h-[300px] flex items-center justify-center bg-[#0C0C0C] border-y-4 border-white/10 overflow-hidden marquee-hover-container ${marqueeActive ? 'marquee-active' : ''}`}
+        className={`w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] min-h-50 md:min-h-75 flex items-center justify-center bg-[#0C0C0C] border-y-4 border-white/10 overflow-hidden marquee-hover-container ${marqueeActive ? 'marquee-active' : ''}`}
         onClick={handleMarqueeTouch}
         onTouchStart={handleMarqueeTouch}
       >
@@ -220,7 +171,7 @@ const About = () => {
             scrollDependent={true}
             clasname='font-semibold tracking-[-0.02em] leading-[0.9] text-[2.5rem] sm:text-[4rem] md:text-[7rem] text-transparent bg-gradient-to-r from-[#f5f5f5] via-[#cfcfcf] to-[#6e6e6e] bg-clip-text transition-all duration-300'
           >
-            Experience Bihaan'25
+            Think. Code. Transform
           </ScrollBaseAnimation>
         </div>
       </div>

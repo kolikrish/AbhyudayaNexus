@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -128,7 +130,7 @@ const Volunteers = () => {
   return (
     <main className="w-full bg-[#0C0C0C] text-white">
       {/* Screen 1: Organizers Text with Scroll Effect */}
-      <div ref={screen1Ref} className="relative flex min-h-[70vh] md:h-screen items-center justify-center flex-col gap-6 md:gap-8 py-16 md:py-20 px-4 mt-12 md:mt-20 overflow-hidden">
+      <div ref={screen1Ref} className="relative flex min-h-[70vh] md:h-screen items-center justify-center flex-col gap-6 md:gap-8 py-16 md:py-20 px-4 overflow-hidden">
         <motion.div style={{ y: screen1Y }} className="flex flex-col items-center justify-center gap-4 md:gap-6 max-w-4xl mx-auto text-center">
           <h2
             className="font-medium text-5xl md:text-[10rem] lg:text-[12rem] leading-[1.1] pb-4"
