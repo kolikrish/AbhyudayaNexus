@@ -1,0 +1,83 @@
+.introduction{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 99;
+    background-color: #141516;
+    overflow: hidden; /* prevents wave overflow */
+
+    svg{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: calc(100% + 300px);
+
+        path{
+            fill: #141516;
+        }
+    }
+
+    p{
+        display: flex;
+        color: #FFF3D2;
+        font-size: 42px;
+        align-items: center;
+        position: absolute;
+        z-index: 1;
+        font-weight: 300;
+        transform-origin: center;
+        transition: transform 0.4s ease, font-size 0.4s ease;
+
+        span{
+            margin-left: 12px;
+            font-weight: 600;
+        }
+    }
+}
+
+/* Tablet Cinematic */
+@media (max-width: 900px) {
+    .introduction p {
+        font-size: 36px;
+    }
+
+    .introduction svg {
+        height: calc(100% + 260px);
+    }
+}
+
+/* Mobile Cinematic */
+@media (max-width: 600px) {
+    .introduction{
+        padding: 0 28px;
+    }
+
+    .introduction p {
+        font-size: 32px;
+        letter-spacing: 0.5px;
+        transform: scale(0.98);
+    }
+
+    .introduction p span {
+        margin-left: 10px;
+    }
+
+    .introduction svg {
+        height: calc(100% + 220px);
+    }
+}
+
+/* Small Phone Cinematic */
+@media (max-width: 400px) {
+    .introduction p {
+        font-size: 28px;
+        transform: scale(0.94); /* cinematic pullback */
+    }
+
+    .introduction svg {
+        height: calc(100% + 190px);
+    }
+}

@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  /* Hero gradient colors (Bengali warm pastel palette) */
+  --hero-g1: #f8e9ea; /* ivory-rose */
+  --hero-g2: #ffd7c2; /* peach */
+  --hero-g3: #fff6e8; /* cream */
+  --hero-g4: #f3d8b0; /* warm beige */
+}
+/* html, body {
+  overflow-x: hidden;
+} */
+
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    /* Slightly richer hero colors on dark mode */
+    --hero-g1: #2b1b1f;
+    --hero-g2: #5a2d20;
+    --hero-g3: #3a2724;
+    --hero-g4: #2f1e19;
+  }
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  /* Use Lexend as the primary site font with sane fallbacks */
+  font-family: 'Lexend', 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+/*
+ If Funnel Display doesn't load from Google Fonts you can self-host it:
+ 1. Place your Funnel Display font files in `public/fonts/`, e.g.:
+    - public/fonts/FunnelDisplay-Regular.woff2
+    - public/fonts/FunnelDisplay-Bold.woff2
+ 2. Uncomment the @font-face rules below (and adjust file names/weights).
+
+@font-face {
+  font-family: 'Funnel Display';
+  src: url('/fonts/FunnelDisplay-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Funnel Display';
+  src: url('/fonts/FunnelDisplay-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+*/
+
+/* Hero helpers */
+.hero-gradient {
+  background: linear-gradient(135deg, var(--hero-g1), var(--hero-g2), var(--hero-g3), var(--hero-g4));
+}
+
+/* Marquee */
+.hero-marquee {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.hero-marquee__track {
+  display: inline-block;
+  animation: marquee 18s linear infinite;
+  will-change: transform;
+}
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes scrollUp {
+  0% { 
+    transform: translateY(0); 
+  }
+  100% { 
+    transform: translateY(-50%); 
+  }
+}
+
+.animate-scrollUp {
+  animation: scrollUp 28s linear infinite;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-marquee__track { animation: none; }
+  .animate-scrollUp { animation: none; }
+}
+
+/* marquee fade masks on edges */
+.hero-marquee-container {
+  position: relative;
+  overflow: hidden;
+}
+.hero-marquee-container:before,
+.hero-marquee-container:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 8%;
+  pointer-events: none;
+  z-index: 30;
+}
+.hero-marquee-container:before { left: 0; background: linear-gradient(to right, var(--background), rgba(255,255,255,0)); }
+.hero-marquee-container:after { right: 0; background: linear-gradient(to left, var(--background), rgba(255,255,255,0)); }
+
+/* Hide scrollbar for Chrome, Safari and Edge */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for IE/Edge Legacy */
+body {
+  -ms-overflow-style: none;
+}
