@@ -33,8 +33,8 @@ const About = () => {
 
         {/* Section 1: Main intro - Center with large Bihan with smoke effect */}
         <GradientSmokeText
-          text="Bihaan'25"
-          subtitle="The grand welcome for the newest wave of RCCIIT."
+          text="AbhyudayaNexus"
+          subtitle="Where innovation meets connection"
         />
 
         {/* Section 2: Celebration - Left text, Right image */}
@@ -43,7 +43,7 @@ const About = () => {
             <TextAnimation
               as="p"
               letterAnime={true}
-              text="A celebration of fresh faces, new energy, and unforgettable vibes."
+              text="A hub of events, workshops, and hands-on sessions. Experience innovation through curated events and sessions."
               direction="left"
               viewport={{ amount: 0.3, once: false }}
               classname="text-lg sm:text-xl md:text-3xl lg:text-4xl font-semibold leading-relaxed text-white normal-case!"
@@ -83,7 +83,7 @@ const About = () => {
           <div className="order-1 md:order-2 flex items-start min-h-[150px] md:min-h-[700px] z-10 relative pt-4 md:pt-8">
             <TextAnimation
               as="p"
-              text="This event brings music, lights, laughter, and moments that stay long after the night ends."
+              text="This hackathon brings coders together to build, innovate, and create solutions that matter. A space of code, chaos, creativity, and unforgettable breakthroughs."
               direction="right"
               viewport={{ amount: 0.3, once: false }}
               classname="text-lg sm:text-xl md:text-3xl lg:text-4xl font-semibold leading-relaxed text-white md:text-right normal-case!"

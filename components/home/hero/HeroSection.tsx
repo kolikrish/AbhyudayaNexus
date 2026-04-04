@@ -69,8 +69,8 @@ export default function HeroSection() {
           ref={stickyMaskRef}
           className="sticky top-0 h-screen w-full flex items-center justify-center overflow-hidden z-10"
           style={{
-            maskImage: 'url(/assets/BIHAAN25.svg)',
-            WebkitMaskImage: 'url(/assets/BIHAAN25.svg)',
+            maskImage: 'url(/assets/logo2.png)',
+            WebkitMaskImage: 'url(/assets/logo2.png)',
             maskPosition: '52.35% center',
             WebkitMaskPosition: '52.35% center',
             maskRepeat: 'no-repeat',
