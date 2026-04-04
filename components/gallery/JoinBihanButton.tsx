@@ -28,7 +28,7 @@ const JoinBihanButton: React.FC = () => {
   return (
     <div className='flex justify-center'>
       <a
-        href="https://www.goavo.ai/events/forms/fillup?id=6910c46c6f6ffa7d321da5e5"
+        href="#"
         target="_blank"
         rel="noopener noreferrer"
         className='relative inline-block w-48 h-[3em] mx-auto group bg-white border-black border-2 rounded-full'
@@ -57,7 +57,7 @@ const JoinBihanButton: React.FC = () => {
           <span className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[40%] w-[70.8%] h-[42.85%] rounded-full filter blur-[15px] bg-[#600060]'></span>
         </div>
         <span className='absolute inset-0 flex items-center justify-center px-4 gap-2 rounded-full group-hover:text-yellow-300 text-white text-lg font-semibold tracking-wide whitespace-nowrap pointer-events-none'>
-          Join Bihaan
+          Join Abhyudaya
         </span>
       </a>
     </div>

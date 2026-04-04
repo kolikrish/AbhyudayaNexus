@@ -30,7 +30,7 @@ export default function Navbar() {
 				<Link href="/" className="flex items-center">
 					<Image
 						src="/assets/logo2.png"
-						alt="BIHAN Logo"
+						alt="Abhyudaya Logo"
 						width={40}
 						height={40}
 						className="object-contain"

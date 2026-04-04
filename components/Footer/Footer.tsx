@@ -1,5 +1,6 @@
 import React from 'react'
 import { Instagram, Facebook } from 'lucide-react'
+import Image from 'next/image'
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
       <div className='w-full flex items-center justify-center md:justify-between mb-6 md:mb-8 lg:mb-12 z-10 px-4 gap-8 md:gap-0'>
         {/* Instagram - Centered on mobile, left positioned on desktop */}
         <a 
-          href="https://www.instagram.com/bihaan_rcciit?igsh=MXVhMjJrZjMxOHZlbg==" 
+          href="#" 
           target="_blank" 
           rel="noopener noreferrer"
           className='flex items-center gap-2 md:gap-3 text-white transition-all duration-300 hover:scale-110 hover:-translate-y-2 hover:text-[rgb(255,242,235)] hover:drop-shadow-[0_0_8px_rgba(255,242,235,0.5)] md:ml-[33%]'
@@ -20,7 +21,7 @@ const Footer = () => {
         
         {/* Facebook - Centered on mobile, right positioned on desktop */}
         <a 
-          href="https://www.facebook.com/share/19h19QofkC/" 
+          href="#"
           target="_blank" 
           rel="noopener noreferrer"
           className='flex items-center gap-2 md:gap-3 text-white transition-all duration-300 hover:scale-110 hover:-translate-y-2 hover:text-[rgb(255,242,235)] hover:drop-shadow-[0_0_8px_rgba(255,242,235,0.5)] md:mr-[33%]'
@@ -30,18 +31,24 @@ const Footer = () => {
         </a>
       </div>
 
-     
       <div className='relative w-full flex items-end justify-center'>
-        <img 
-          src="/assets/bihan2footer.png" 
-          alt="BIHAAN'25" 
-          className='block w-full h-auto object-cover object-bottom'
-          style={{
-            maxWidth: '100vw',
-            width: '95%',
-            height: 'auto',
-          }}
-        />
+        <div style={{ maxWidth: '100vw', width: '95%' }}>
+          <Image 
+            src="/assets/logo-cutted.png" 
+            alt="BIHAAN'25"
+            width={1920}  // Provide a big width and height to help Next.js calculate correct ratio, adjust if you know true size
+            height={400}
+            className="block w-full h-auto object-cover object-bottom"
+            style={{
+              width: '100%',
+              height: 'auto',
+              // fontSize: "10rem",
+              transform: "perspective(800px) rotateX(20deg) scaleY(1)",
+              transformOrigin: "bottom",
+            }}
+            priority
+          />
+        </div>
       </div>
     </div>
   )

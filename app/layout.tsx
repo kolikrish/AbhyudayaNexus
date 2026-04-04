@@ -18,7 +18,7 @@ const lexend = Lexend({
 
 export const metadata: Metadata = {
   title: "AbhyudayaNexus",
-  description: "Fresher's Event of RCCIIT",
+  description: "Abhyudaya Nexus of SVVV Indore",
   icons: {
     icon: "/assets/favicon.ico",
   },

@@ -8,36 +8,33 @@ import { Colors, Liquid } from '@/components/ui/liquid-gradient';
 import Screen2Mobile from './Screen2Mobile';
 
 const images = [
-  "https://i.postimg.cc/nzWH7JFW/img23.jpg",
-  "https://i.postimg.cc/wTzF2Cb5/img2.jpg",
-  "https://i.postimg.cc/T1XmjH6M/Subh-0189.jpg",
-  "https://i.postimg.cc/YSVBmrRx/img11.jpg",
-  "https://i.postimg.cc/vHdMzmsL/img12.jpg",
-  "https://i.postimg.cc/yNmwQmy1/img-19.jpg",
-  "https://i.postimg.cc/x81GDQr4/img14.jpg",
-  "https://i.postimg.cc/hPynq1mw/img15.jpg",
-  "https://i.postimg.cc/pTp8qZDr/img16.jpg",
-  "https://i.postimg.cc/NM6Yqh8X/img20.jpg",
-  "https://i.postimg.cc/fbswRTHx/img5.jpg",
-  "https://i.postimg.cc/1RdsNKCQ/img6.jpg",
-  "https://i.postimg.cc/vBBw4157/img8.jpg",
-  "https://i.postimg.cc/9QbWzHs1/img9.jpg",
-  "https://i.postimg.cc/0jC8mgbN/img17.jpg",
-  "https://i.postimg.cc/HWfM1GwK/img21.jpg",
-  "https://i.postimg.cc/XJttHsBz/Subh-0699.jpg",
-  "https://i.postimg.cc/5yvTZ8wj/Subh-0705.jpg",
-  "https://i.postimg.cc/fyXp6Yxt/Subh-0685.jpg",
-  "https://i.postimg.cc/nz1QTPWM/Subh-0709.jpg",
-  "https://i.postimg.cc/Hxt73hNw/Subh-0132.jpg",
-  "https://i.postimg.cc/d31D6td6/Subh-0109.jpg",
-  "https://i.postimg.cc/qRrkbMf2/Subh-0926.jpg",
-  "https://i.postimg.cc/MHm2nyv8/Subh-0005.jpg",
-  "https://i.postimg.cc/K8qb7rQY/Subh-0021.jpg",
-  "https://i.postimg.cc/kGQ9W0YZ/Subh-0475.jpg",
-  "https://i.postimg.cc/4dhXx7zM/Subh-0481.jpg",
-  "https://i.postimg.cc/7ZDhtVgC/Subh-0782.jpg"
 
-
+  '/assets/3.jpg',
+  '/assets/4.jpeg',
+  '/assets/5.jpeg',
+  '/assets/6.jpeg',
+  '/assets/7.jpeg',
+  '/assets/8.jpeg',
+  '/assets/12.jpeg',
+  '/assets/9.jpeg',
+  '/assets/10.jpeg',
+  '/assets/11.jpeg',
+  '/assets/13.jpeg',
+  '/assets/14.jpeg',
+  '/assets/15.jpeg',
+  '/assets/3.jpg',
+  '/assets/4.jpeg',
+  '/assets/5.jpeg',
+  '/assets/6.jpeg',
+  '/assets/7.jpeg',
+  '/assets/8.jpeg',
+  '/assets/12.jpeg',
+  '/assets/9.jpeg',
+  '/assets/10.jpeg',
+  '/assets/11.jpeg',
+  '/assets/13.jpeg',
+  '/assets/14.jpeg',
+  '/assets/15.jpeg',
 
 ];
 
@@ -67,7 +64,7 @@ const HelpUsButton = () => {
   return (
     <div className='flex justify-center'>
       <a
-        href="https://forms.gle/CrRE8185gqmLR9Vb7"
+        href="#"
         target="_blank"
         rel="noopener noreferrer"
         className='relative inline-block w-60 h-[3.6em] mx-auto group bg-white border-black border-2 rounded-full'

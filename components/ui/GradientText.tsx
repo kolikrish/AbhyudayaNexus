@@ -1,4 +1,6 @@
+/* eslint-disable */
 // components/ui/GradientText.tsx
+
 'use client'
 import React from 'react'
 
@@ -8,14 +10,14 @@ interface GradientTextProps {
 }
 
 const GradientText: React.FC<GradientTextProps> = ({ text, className = '' }) => {
-  // Split text to find Bihan'25 or BIHAN'25
-  const bihanRegex = /(Bihan'25|BIHAN'25)/g
+  
+  const bihanRegex = /(Abhyudaya)/g
   const parts = text.split(bihanRegex)
   
   return (
     <>
       {parts.map((part, index) => {
-        if (part === "Bihan'25" || part === "BIHAN'25") {
+        if (part === "Abhyudaya") {
           return (
             <span
               key={index}

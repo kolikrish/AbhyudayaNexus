@@ -43,18 +43,18 @@ const Gallery = () => {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
 
     const images = [
-        'https://i.postimg.cc/Hxt73hNw/Subh-0132.jpg',
-        '/assets/img9.JPG',
-        '/assets/img10.JPG',
-        '/assets/img11.JPG',
-        '/assets/img12.JPG',
-        '/assets/img13.JPG',
-        '/assets/img14.JPG',
-        '/assets/img15.JPG',
-        '/assets/img16.JPG',
-        'https://i.postimg.cc/nzWH7JFW/img23.jpg',
-        'https://i.postimg.cc/K8qb7rQY/Subh-0021.jpg',
-        '/assets/img5.JPG',
+        '/assets/4.jpeg',
+        '/assets/5.jpeg',
+        '/assets/6.jpeg',
+        '/assets/7.jpeg',
+        '/assets/8.jpeg',
+        '/assets/12.jpeg',
+        '/assets/9.jpeg',
+        '/assets/10.jpeg',
+        '/assets/11.jpeg',
+        '/assets/13.jpeg',
+        '/assets/14.jpeg',
+        '/assets/15.jpeg',
     ]
 
     return (
@@ -66,12 +66,12 @@ const Gallery = () => {
                         className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-semibold mb-4 leading-tight"
                         style={{ fontFamily: 'var(--font-lexend), Lexend, Impact, sans-serif' }}
                     >
-                        When <span className="gradient-fresher">Fresher&#39;s</span>
+                        When <span className="gradient-fresher">Innovation</span>
                         <br className="hidden md:block" />
                           took the Stage
                     </h1>
                     <p className="text-base sm:text-lg md:text-2xl max-w-3xl leading-relaxed md:leading-10">
-                        Spotlighting The Performances Of <span className="gradient-fresher">Our Freshers</span> Who Lit Up The Stage With{' '}
+                        Where Logic Meets Creativity <span className="gradient-fresher">Abhyudaya</span> Spotlighting{' '}
                         {/* <br className="hidden md:block" /> */}
                         Talent, Energy, and <span className="gradient-fresher">Unmatched Vibes.</span>
                     </p>
@@ -130,7 +130,7 @@ const Gallery = () => {
                         <p className="text-lg mb-4">Fresher?</p>
                         <JoinBihanButton />
                     </div>
-                    
+
                     </div>
                 </div>
             </div>
