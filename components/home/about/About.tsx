@@ -53,7 +53,7 @@ const About = () => {
           <div className="order-2">
             <div className="w-full aspect-3/4 mx-auto">
               <RevealImage
-                src="https://i.postimg.cc/j5xWvtrX/img1.jpg"
+                src="/assets/1.png"
                 alt="Celebration"
                 className="w-full h-full object-cover"
               />
@@ -71,7 +71,7 @@ const About = () => {
           <div className="order-2 md:order-1">
            <div className="w-full aspect-3/4 mx-auto">
               <RevealImage
-                src="https://i.postimg.cc/T2Hd0Sbj/img4.jpg"
+                src="/assets/2.png"
                 alt="Celebration"
                 className="w-full h-full object-cover"
               />
@@ -146,7 +146,7 @@ const About = () => {
           <div className="w-full max-w-250 h-[40vh] sm:h-[50vh] md:h-150">
            
               <RevealImage
-                src="https://i.postimg.cc/287Scg2B/img18.jpg"
+                src="/assets/3.jpg"
                 alt="Celebration"
                 className="w-full h-full object-cover"
               />

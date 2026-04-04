@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   title: "AbhyudayaNexus",
   description: "Fresher's Event of RCCIIT",
   icons: {
-    icon: "/assets/bihan_favicon2.svg",
+    icon: "/assets/favicon.ico",
   },
 };
 
