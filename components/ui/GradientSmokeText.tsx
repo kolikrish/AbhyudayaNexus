@@ -26,9 +26,9 @@ export default function GradientSmokeText({
         <div className="relative inline-block">
           {/* Extra wide smoke layer */}
           <div 
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap"
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap font-medium"
             style={{ 
-              fontFamily: 'var(--font-lexend), sans-serif',
+              fontFamily: 'Helvetica, Arial, sans-serif',
               fontSize: textSize,
               fontWeight: 800,
               background: `url(${gradientImage}) center/cover`,
@@ -48,7 +48,7 @@ export default function GradientSmokeText({
             data-text={text}
             className="gradient-text relative whitespace-nowrap" 
             style={{ 
-              fontFamily: 'var(--font-lexend), sans-serif',
+              fontFamily: 'Helvetica, Arial, sans-serif',
               fontSize: textSize,
               fontWeight: 800,
               background: `url(${gradientImage}) center/cover`,

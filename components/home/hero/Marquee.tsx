@@ -4,7 +4,7 @@ import ScrollBaseAnimation from '@/components/ui/scroll-text-marque';
 
 function Marquee() {
   return (
-    <div className='w-full min-h-[500px] flex flex-col items-center justify-center border-y-8 border-yellow-400'>
+    <div className='w-full min-h-125 flex flex-col items-center justify-center border-y-8 border-yellow-400'>
       <div className="w-full">
         <ScrollBaseAnimation
           baseVelocity={3}

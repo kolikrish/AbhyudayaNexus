@@ -210,7 +210,7 @@ const Column = ({ images, direction, duration, className = "" }: ColumnProps) =>
 
   return (
     <motion.div
-      className={`relative -top-[45%] flex h-full flex-col gap-[2vw] ${className} md:w-1/4 md:flex-1 w-full max-w-[280px]`}
+      className={`relative -top-[45%] flex h-full flex-col gap-[2vw] ${className} md:w-1/4 md:flex-1 w-full max-w-70`}
       animate={{
         y: [yStart, yEnd],
       }}

@@ -96,21 +96,21 @@ const About = () => {
         <div className="min-h-[30vh] md:min-h-[50vh] flex flex-col items-center justify-center space-y-4 md:space-y-7 py-8">
           <h2
             className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black text-center"
-            style={{ fontFamily: 'var(--font-lexend), sans-serif' }}
+            style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
           >
             Fresh <span className='gradient-smoke-statement'>Faces</span>
           </h2>
 
           <h2
             className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black text-center"
-            style={{ fontFamily: 'var(--font-lexend), sans-serif' }}
+            style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
           >
             Bold <span className='gradient-smoke-statement'>Ideas.</span>
           </h2>
 
           <h2
             className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black text-center leading-[1.2] pb-4"
-            style={{ fontFamily: 'var(--font-lexend), sans-serif' }}
+            style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
           >
             Real <span className='gradient-smoke-statement'>Impact.</span>
           </h2>
@@ -124,18 +124,18 @@ const About = () => {
             direction="up"
             lineAnime={true}
             viewport={{ amount: 0.5, once: false }}
-            classname="text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold text-center normal-case! text-white"
+            classname="text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-medium text-center normal-uppercase! text-white"
             customStyle={{ fontFamily: 'Helvetica, Arial, sans-serif', color: '#ffffff' }}
           />
 
-          <div className="border-b-4 border-yellow-100 rounded-full inline-block px-2">
+          <div className="border-b-4 border-yellow-100 rounded inline-block px-2">
             <TextAnimation
               as="h2"
               text="Abhyudaya Coding Club."
               direction="up"
               lineAnime={true}
               viewport={{ amount: 0.5, once: false }}
-              classname="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-center normal-case!"
+              classname="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-medium text-center normal-case!"
               customStyle={{ fontFamily: 'Helvetica, Arial, sans-serif', color: '#FFF3D2' }}
             />
           </div>
